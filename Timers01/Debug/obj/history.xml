@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\cmsis_lib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\cmsis_lib\include -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02 -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\cmsis -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\Main -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\cmsis_boot -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test02\OzanLib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
+      <target file="stm32f4xx_gpio.o" lastModified="1460c1dc00c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1460be4730a"/>
+      </target>
+      <target file="timer.o" lastModified="1460c32c31d">
+         <source file="..\..\..\Main\timer.c" lastModified="1460c1e8e59"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="1460c1dc220">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="1460be3d580"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1460c1dc089">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1460c1dbd2e">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f"/>
+      </target>
+      <target file="main.o" lastModified="1460c32c420">
+         <source file="..\..\..\main.c" lastModified="1460c2ed668"/>
+      </target>
+      <target file="gpio.o" lastModified="1460c32c4cb">
+         <source file="..\..\..\Main\gpio.c" lastModified="1460c0f75f6"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1460c1dbee3">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1460be3d5a1"/>
+      </target>
+      <target file="misc.o" lastModified="1460c1dc106">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1460be441f9"/>
+      </target>
+   </processor>
+</history>
