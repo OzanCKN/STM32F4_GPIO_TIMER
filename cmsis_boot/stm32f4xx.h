@@ -89,7 +89,7 @@
   */           
 
 #if !defined  (HSE_VALUE) 
-  #define HSE_VALUE    ((uint32_t)25000000) /*!< Value of the External oscillator in Hz */
+  #define HSE_VALUE    ((uint32_t)8000000) /*!< Value of the External oscillator in Hz */ // Normalde 25 yaziyordu, (MHz cinsinden kristal frekansýmýz. stm32F4 discovery kartýnda 8MHz.)
 #endif /* HSE_VALUE */
 
 /**

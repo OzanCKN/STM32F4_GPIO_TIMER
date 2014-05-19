@@ -5,13 +5,13 @@ void timergok(void);
 
 int main(void) {
 
-	SystemInit();
+	SystemInit(); // cmsis_boot/system_stm32f4xx.c dosyasinda tanimli (satir:209)
 	init_gpio();
 	init_tim7();
-	SysTick_Config(SystemCoreClock / 1000);
+	SysTick_Config(SystemCoreClock / 1000); //1milisaniyelik system clock elde edelim
 	while (1) {
 
-		GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
+//		GPIO_ToggleBits(GPIOD, GPIO_Pin_13); //turuncu led
 		DelayMs(1000);
 	}
 }
@@ -37,7 +37,8 @@ void timergok(void) {
 		timer_update2 = 0;
 		if (++ledtime2 > 1000) {
 			ledtime2 = 0;
-			GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+//			GPIO_ToggleBits(GPIOD, GPIO_Pin_14); //kirmizi led
+			GPIOD->ODR ^= 0x00004000; //toggle et
 		}
 	}
 }

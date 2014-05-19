@@ -4,7 +4,7 @@ void timeroz(void) {
 		timer_update = 0;
 		if (++ledtime > 250) {
 			ledtime = 0;
-//			GPIO_ToggleBits(GPIOD,GPIO_Pin_12);
+//			GPIO_ToggleBits(GPIOD,GPIO_Pin_12); //yesil led
 			if ((((GPIOD->ODR) & (1 << 12)) - (1 << 12)) == 0) {
 				GPIOD->ODR &= ~0b00000000000000000001000000000000; //0b11111111111111111110111111111111; //0b00000000000000000001000000000000;
 			} else
